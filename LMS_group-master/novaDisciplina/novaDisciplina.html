@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="static/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="static/css/novoDisciplinacss.css">
+		<meta charset="utf-8">
+		<title>Cadastrar Nova Disciplina</title>
+	</head>
+	<body>
+		<header>
+			<img src="static/images/logo.png" align='left' />
+			<h1>Faculdade Impacta de Tecnologia<br/>	A TECNOLOGIA MUDA O SEU FUTURO<br/></h1>
+		</header></br>
+		<nav>
+			<a href="..\parte-vinicius\index.html" class="text_link">Página Principal</a>  |
+			<a href="..\parte-otavio-FINAL\cursos.html">Cursos</a>  |
+			<a href="..\parte-Andrey\Atividade1.html">Detalhe de curso</a>  |
+			<a href="..\parte-Gustavo\disciplinascurso.html">Disciplinas de curso</a>  |
+			<a href="detalhesdisciplina.html">Detalhes de disciplina</a>  |
+			<a href="..\Parte_Fabio\login_css.html">Login</a>  |
+			<a href="..\parte-kaique\novo_curso.html">Novo curso</a>  
+		</nav></br>
+		<h2>Criar nova disciplina</h2>
+		<form>
+			<div class="row">
+				<div class="col-25">
+        			<label for="curso">Nome da disciplina:</label>
+      			</div>
+      			<div class="col-50">
+      				<input class="coluna-75" type="text" name="Nome" placeholder="Disciplina"><br>
+      			</div>
+      		</div>
+
+      		<div class="row">
+      			<div class="col-25">
+        			<label for="coordenador">Coordenador: </label>
+      			</div>
+      			<div class="col-50">
+      				<input type="text" name="Nome" placeholder="Coordenador">
+      			</div>
+			</div>
+
+			<div class="row">
+      			<div class="col-25">
+        			<label for="Descrição">Descrição: </label>
+      			</div>
+      			<div class="col-50">
+      				<textarea style="height:200px" name="Descrição" placeholder="Descrição da disciplina"></textarea>
+      			</div>
+			</div></br></br>
+
+			<div class="row">
+      			<div class="col-25">
+        			<label for="tipo">Tipo de Disciplina: </label>
+      			</div>
+      			<div class="col-50">
+      				<input type="radio" name="Periodo" value="manha">Administrativa
+					<input type="radio" name="Periodo" value="tarde">Tecnologia
+					<input type="radio" name="Periodo" value="noite">Comunicação
+      			</div>
+			</div></br>
+
+			
+			<div class="row">
+      			<div class="col-25">
+        			<label for="Semestres">Carga Horária: </label>
+      			</div>
+      			<div class="col-50">
+      				<select>
+  						<option value="4 Semestres">40 Horas</option>
+  						<option value="6 Semestres">80 Horas</option>
+  						<option value="8 Semestres">120 Horas</option>						
+					</select>
+      			</div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-25">
+        			<label for="Semestres"></label>
+      			</div>
+      			<div class="col-50">
+      				<input type="submit" name="Criar novo Curso" value="Criar">
+      			</div>
+    		</div>			
+		</form>
+
+		<footer>
+			<p>11 3254-8300 - Impacta 2018 - Todos os direitos reservados.</p>
+		</footer>
+	</body>
+</html>
