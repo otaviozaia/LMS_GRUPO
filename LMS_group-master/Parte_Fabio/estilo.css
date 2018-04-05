@@ -1,0 +1,42 @@
+body{
+	       background-image: url("31.jpg");
+           background-size:cover;
+           margin: 0;   	   
+	   }
+       input {
+	       width: 70%
+		   outline:none;
+		   padding: 10px 11px;
+		   border: 1px #aaa solid;
+		   font-size: 15px;
+		   background: #fff9a2;
+		   display:block;
+		   margin: 40px auto;
+           	   	   
+	   }
+       #login{
+		   background: #19b1ca;
+           color: #fff;
+           border: none;
+           width: 30%;		   
+	   }
+       div{
+	      width:30%;
+          height:430px;
+          background:rgba(0,0,0,.2);
+		  box-shadow:4px 3px 43px #000;
+		  position: absolute;
+		  top: 90px;
+		  left: 450px;	
+		  
+	   } 
+       
+       a{
+	      color:#fff;
+		  font-family: arial;
+		  font-size: 13px;
+	   }
+       img(
+	      display:block;
+		  margin:-75px auto 0 auto;
+	   ) 	   
