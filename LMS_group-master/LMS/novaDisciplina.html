@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="static/images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="static/css/css_unico.css">
+		<meta charset="utf-8">
+		<title>Cadastrar Nova Disciplina</title>
+	</head>
+	<body>
+		<header>
+			<img src="static/images/logo.png" align='left' />
+			<h1>Faculdade Impacta de Tecnologia<br/>
+				A TECNOLOGIA MUDA O SEU FUTURO<br/></h1>
+		</header></br>
+		<div class="divNav">
+			<nav>
+				<a href="index.html" class="text_link">Página Principal</a>&nbsp;&nbsp;
+            	<a href="login.html" class="text_link">Login</a>&nbsp;&nbsp;
+            	<a href="cursos.html" class="text_link">Cursos</a>&nbsp;&nbsp;
+		    	<a href="novo_curso.html" class="text_link">Novo Curso</a>&nbsp;&nbsp;
+		    	<a href="novaDisciplina.html" class="text_link">Nova disciplina</a>&nbsp;&nbsp;
+		    	<a href="disciplinascurso.html" class="text_link">Disciplina de Curso</a>&nbsp;&nbsp;
+		    	<a href="detalhedisciplina.html" class="text_link">Detalhe de Disciplina</a>&nbsp;&nbsp;
+            	<a href="detalhecurso.html" class="text_link">Detalhe de Curso</a>&nbsp;&nbsp;
+            	<a href="NovoAluno.html" class="text_link">Novo Aluno</a>&nbsp;&nbsp;
+            	<a href="matricula.html" class="text_link">Matrícula</a>&nbsp;&nbsp;
+			</nav>
+		</div><br/><br/>
+		<h1 class="border">Criar nova disciplina</h1><br/><br/><br/>
+		<form>
+			<div class="row">
+				<div class="col-25">
+        			<label class="text_35px" for="curso">Nome da disciplina:</label>
+      			</div>
+      			<div class="col-50">
+      				<input type="text" name="Nome" placeholder="Disciplina"><br>
+      			</div>
+      		</div>
+
+      		<div class="row">
+      			<div class="col-25">
+        			<label class="text_35px" for="coordenador">Coordenador: </label>
+      			</div>
+      			<div class="col-50">
+      				<input type="text" name="Nome" placeholder="Coordenador">
+      			</div>
+			</div>
+
+			<div class="row">
+      			<div class="col-25">
+        			<label class="text_35px" for="Descrição">Descrição: </label>
+      			</div>
+      			<div class="col-50">
+      				<textarea style="height:200px" name="Descrição" placeholder="Descrição da disciplina"></textarea>
+      			</div>
+			</div></br></br>
+
+			<div class="row">
+      			<div class="col-25">
+        			<label class="text_35px" for="tipo">Tipo de Disciplina: </label>
+      			</div>
+      			<div class="col-50">
+      				<input type="radio" name="Periodo" value="manha"><strong>Administrativa</strong>&nbsp;&nbsp;
+					<input type="radio" name="Periodo" value="tarde"><strong>Tecnologia</strong>&nbsp;&nbsp;
+					<input type="radio" name="Periodo" value="noite"><strong>Comunicação</strong>
+      			</div>
+			</div></br>
+
+			
+			<div class="row">
+      			<div class="col-25">
+        			<label class="text_35px" for="Semestres">Carga Horária: </label>
+      			</div>
+      			<div class="col-50">
+      				<select>
+  						<option value="4 Semestres">40 Horas</option>
+  						<option value="6 Semestres">80 Horas</option>
+  						<option value="8 Semestres">120 Horas</option>						
+					</select>
+      			</div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-25">
+        			<label for="Semestres"></label>
+      			</div>
+      			<div class="col-50">
+      				<input type="submit" name="Criar novo Curso" value="Criar">
+      			</div>
+    		</div>			
+		</form>
+
+		<footer>
+			<h3>11 3254-8300 - Impacta 2018 - Todos os direitos reservados.</h3>	
+		</footer>
+	</body>
+</html>
