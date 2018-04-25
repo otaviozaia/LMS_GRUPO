@@ -21,8 +21,9 @@
    */
   
   body {
-    margin: 0;
-    background-color: #191970;
+    background-image: url("../images/bg.jpg");
+    background-size:cover;
+    margin: 0;   	   
   }
   
   /**
@@ -404,6 +405,8 @@
     height: 40px;
     font-size: 20px;
     text-align: center;
+	display: flex;
+	justify-content: center;
   }
   
   nav{
@@ -508,10 +511,15 @@ input[type=submit]:hover {
 
 
 .div_login{
-  width:30%;
+  width:400px;
   height:430px;
   background:rgba(0,0,0,.2);
   box-shadow:4px 3px 43px #000;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 90px;
+  margin-bottom:110px;
+	
 }
 
 ul, li{
