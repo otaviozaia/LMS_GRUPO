@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block base %}
+{% load static %}
+		<h1 id='titulo'>Faculdade Impacta de Tecnologia</h1></br></br>
+		<div id="menuEsquerda"><h2 class="text_branco">Navegue pelo nosso site</h2>
+			<ul>
+				<a href='#nossoCurso'><li>Nossos Cursos</li></a>
+				<a href='#premiReco'><li>Prêmios e Reconhecimentos</li></a>
+				<a href='#smartclass'><li>SmartClass</li></a>
+				<a href='#eventos'><li>Eventos</li></a>
+				<a href='#depoimentos'><li>Depoimentos</li></a>
+			</ul>
+		</div></br></br>
+		<h1 class="descricao" id='nossoCurso'>Conheça nossos Cursos</h1>
+		<p class="descricao">Considerada uma das melhores faculdades com foco em tecnologia do País, a Faculdade Impacta oferece<br/>
+		cursos de Graduação , Pós-Graduação e MBA e cursos técnicos. Conheça quais são as áreas de<br/>
+		conhecimento que a Impacta aborda e saiba um pouco mais sobre cada curso:</p><br/><br/>
+		<div class="div_center">
+		<img src="{% static 'images/graduacao.jpg' %}" height='375px'/>
+		<img src="{% static 'images/mba.jpg' %}" height='375px'/>
+		<img src="{% static 'images/tecnico.jpg' %}" height='375px'/>
+		<img src="{% static 'images/up.jpg' %}" height='375px'/><br/><br/><br/>
+		</div>
+		<table class="table_index">
+			<tr>
+				<th align='center'>Curso</th>
+				<th align='center'>Nível</th>
+				<th align='center'>Semestres</th>
+			</tr>
+			<tr>
+				<td align='center'>Ánalise e Desenvolvimento de <br/> Sistemas</td>
+				<td align='center'>Técnologo</td>
+				<td align='center'>4</td>
+			</tr>
+			<tr>
+				<td align='center'>Sistemas da Informação</td>
+				<td align='center'>Bacharelado</td>
+				<td align='center'>8</td>
+			</tr>
+			<tr>
+				<td align='center'>Banco de Dados</td>
+				<td align='center'>Técnologo</td>
+				<td align='center'>4</td>
+			</tr>
+			<tr>
+				<td align='center'>Informática Industrial</td>
+				<td align='center'>Técnico</td>
+				<td align='center'>3</td>
+			</tr>
+		</table><br/>
+		<h1 class="descricao" id='premiReco'>Prêmios e Reconhecimentos</h1>
+		<p class="descricao">A Faculdade Impacta é altamente reconhecida por sua atuação no mercado da educação, o que comprova o<br/>
+		compromisso da Instituição com o ensino de qualidade e a dedicação do Grupo Impacta em transformar a<br/>
+		sociedade através da tecnologia. Desta maneira, ao longo dos anos a Faculdade Impacta tem recebido<br/>
+		prêmios e reconhecimentos que são resultados do trabalho contínuo de professores e funcionários e da<br/>
+		determinação de seus alunos.</p><br/>
+		<ol class="ol_center">
+			<li>Maior Nota ENADE SP</li>
+			<li>Top 10 ENADE/MEC SP</li>
+			<li>Top 4 ENADE/MEC SP</li>
+			<li>Top 3 ENADE/MEC SP</li>
+		</ol><br/>
+		<h1 class="descricao" id='smartclass'>Conheça o Smartclass</h1>
+			<p class="descricao">As salas de aula da Faculdade Impacta são equipadas com lousas eletrônicas, que capturam todos os pontos<br/>
+			das aulas <strong>presenciais</strong> , como voz, escrita <strong>dinâmica</strong> , vídeos e navegação do professor. Todo o conteúdo é<br/>
+			gravado e disponibilizado em uma sala de ensino virtual para que o aluno assista quando e onde quiser, de<br/>
+			qualquer plataforma digital.</p><br/>
+			<h1 class="descricao" id='eventos'>Pŕoximos Eventos</h1>
+				<p class="descricao">Confira os próximos eventos que os alunos e a Faculdade Impacta irão participar:</p><br/>
+			<h3 class="descricao">1- Governança e Gestão em TI</h3>
+			<p class="descricao">Venha participar e descubra como as melhores práticas interagem para o sucesso do negócio no mundo<br/>
+			tecnológico atual</p><br/><br/>
+			<p class="descricao"><em>Data 20/03 - Horário: 20h às 21:30</em></p><br/>
+			<div class="div_center"><a href=''>Saiba Mais</a></div><br/><br/>
+			<h3 class="descricao">2- PHP 7 do início ao profissional</h3>
+			<p class="descricao">Aprenda a fazer aplicações web modernas com uma das linguagens mais utilizadas. Veja desde a requisição<br/>
+			no navegador até o acesso ao banco de dados.</p><br/><br/>
+			<p class="descricao"><em>Data 01/03 - Horário: 20h às 21:30</em></p></br>
+			<div class="div_center"><a href=''>Saiba Mais</a></div><br/><br/>
+			<h3 class="descricao">3- Importância da comunicação visual para o sucesso do negócio</h3>
+			<p class="descricao">Aliquam metus neque, feugiat eget iaculis fermentum, bibendum quis sem. Nunc rutrum massa vel leo viverra,<br/>
+			at tempor velit consequat. Praesent vitae interdum felis. Donec sit amet diam ut eros tempor aliquet sed et<br/>
+			libero. Phasellus pellentesque mi ut finibus malesuada.</p><br/><br/>
+			<p class="descricao"><em>Data 01/03 - Horário: 20h às 21:30</em></p><br/>
+			<div class="div_center"><a href=''>Saiba Mais</a></div><br/><br/>
+			<h1 class="descricao" id='depoimentos'>Depoimentos</h1>
+			<p class="descricao">Veja aqui o que alunos e ex-alunos estão dizendo sobre a Impacta:</p><br/><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;<p class="descricao">“Comprei meu multímetro lá, pessoal atencioso e competente, fui muito bem atendido, gostei da<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;variedade.”</p><br/>
+			&nbsp;&nbsp;<p class="descricao"><strong>- José da Silva</strong></p><br/><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;<p class="descricao">“Como não sou aluna, não avaliarei os cursos e sim o restaurante que fica dentro. Food'n Cup<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;excelente. Comida muito boa a preços ótimos e atendimento da Márcia e Levi de primeira.<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;Recomendo.”</p></br/>
+			&nbsp;&nbsp;<p class="descricao"><strong>- Jessica Joana</strong></p><br/><br/>
+{% endblock %}
