@@ -10,6 +10,7 @@ urlpatterns = [
     path('detalhedisciplina/',detalhedisciplina, name='detalhedisciplina'),
     path('disciplinascurso/',disciplinascurso, name='disciplinascurso'),
     path('login/', auth_views.login,{'template_name': 'login.html'}, name='login'),
+    path('logout/', auth_views.logout, name='logout'),
     path('matricula/',matricula, name='matricula'),
     path('novadisciplina/',novaDisciplina, name='novaDisciplina'),
     path('novocurso/',novo_curso, name='novo_curso'),
@@ -17,5 +18,9 @@ urlpatterns = [
     path('novocoordenador/',NovoCoordenador, name='NovoCoordenador'),
     path('novoprofessor/',NovoProfessor, name='NovoProfessor'),
     path('recover/',recover, name='recover'),
+    path('areaUser/',areaUser, name='areaUser'),
+    path('areaAluno/',areaAluno, name='areaAluno'),
+    path('areaProfessor/',areaProfessor, name='areaProfessor'),
+    path('first_edit_senha/',first_edit_senha, name='first_edit_senha'),
 
 ]

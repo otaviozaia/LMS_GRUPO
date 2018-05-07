@@ -123,6 +123,7 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = 'curriculo:login'
 LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
 AUTH_USER_MODEL = 'curriculo.User'
 
 

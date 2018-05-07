@@ -116,3 +116,9 @@ document.getElementById("formulario").onsubmit = function(event){
       return window.confirm("Deseja enviar o formulário ?");
   }
 }
+
+   if (defin_senha != confir_senha){
+	  alert('As senhas devem ser iguais.')
+	  return false;
+	}
+ }

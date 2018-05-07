@@ -26,6 +26,7 @@ class ContasManager(BaseUserManager):
 
                 return self._create_user(username, password, **extra_fields)
 
+
 class User(PermissionsMixin,AbstractBaseUser):
     username = models.CharField('Login',max_length=50,unique=True)
     password = models.CharField('Senha',max_length=20)

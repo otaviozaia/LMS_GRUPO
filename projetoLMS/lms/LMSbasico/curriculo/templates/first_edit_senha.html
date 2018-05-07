@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block base %}
+{% load static %}
+<body>
+    <br/><br/><br/><br/>
+   <center><img src ="{% static 'images/logo.PNG' %}" width="20%"/></center>  <br/><br/><br/><br/>
+    <form action ="{% url 'first_edit_senha' %}" method ="POST" align ='center'>
+        {% csrf_token %}
+        <label for = "Email" id = "x"><font class="text_branco">Por favor, cadastre uma nova senha:</font></label><br/><br/>
+        <input type = "password" name ="defin_senha" placeholder="Digite a nova senha" required id="buttom"><br/><br/>
+        <input type = "password" name ="confir_senha" placeholder="Confirme a nova senha" required id="buttom"><br/><br/>
+        <input type = "submit" name = "" value = "Confirmar" placeholder = "" id = "login"/>
+    </form>   
+{% endblock %}
