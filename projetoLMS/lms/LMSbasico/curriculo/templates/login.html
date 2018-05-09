@@ -5,14 +5,13 @@
             <div class="div_login">	       
 		        <form method ="POST" align ='center' ><br/><br/>  
 					{% csrf_token %}
-					{{ form.non_field_erros }}
-					<img src ="{% static 'images/logo.png' %}" width= "48%" id = "logo"/><br/><br/><br/>             
+					{{ form.non_field_errors }}
+					<img src ="{% static 'images/logo.png' %}" width= "48%" id = "logo"/><br/>           
 					{% for field in form %}
-					<label class="text_branco" for="{{ field.label_tag }}"></label><br/>
-					{{ field }}<br/><br/>
-					{{ field.errors }}<br/><br/>
+					<br/><label class="text_branco" for="{{ field.label_tag }}"></label><br/>
+					{{ field }}<br/>
 					{% endfor %}
-			        <input type = "submit" name = "login" value = "LOGIN" placeholder = "" id ="login"/><br/><br/>
+			        <br/><input type = "submit" name = "login" value = "LOGIN" placeholder = "" id ="login"/><br/><br/>
                     <a href = "{% url 'recover' %}" id ="forgot">Esqueceu a senha?</a>	 
 		        </form>
             </div> 

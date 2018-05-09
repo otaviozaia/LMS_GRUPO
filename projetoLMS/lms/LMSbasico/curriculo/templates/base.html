@@ -25,9 +25,13 @@
 				<a href="{% url 'login' %}" class="text_link">Entrar</a>&nbsp;&nbsp;
 				{% endif %}
 				<a href="{% url 'cursos' %}" class="text_link">Cursos</a>&nbsp;&nbsp;
-		    	<a href="{% url 'novo_curso' %}" class="text_link">Novo Curso</a>&nbsp;&nbsp;
-		    	<a href="{% url 'novaDisciplina' %}" class="text_link">Nova disciplina</a>&nbsp;&nbsp;
-		    	<a href="{% url 'disciplinascurso' %}" class="text_link">Disciplina de Curso</a>&nbsp;&nbsp;
+				{% if user %}
+					{% if user.tipo == 'C' %}
+					<a href="{% url 'novo_curso' %}" class="text_link">Novo Curso</a>&nbsp;&nbsp;
+		    		<a href="{% url 'novaDisciplina' %}" class="text_link">Nova disciplina</a>&nbsp;&nbsp;
+					{% endif %}
+				{% endif %}
+				<a href="{% url 'disciplinascurso' %}" class="text_link">Disciplina de Curso</a>&nbsp;&nbsp;
 		    	<a href="{% url 'detalhedisciplina' %}" class="text_link">Detalhe de Disciplina</a>&nbsp;&nbsp;
             	<a href="{% url 'detalhecurso' %}" class="text_link">Detalhe de Curso</a>&nbsp;&nbsp;
 				{% if not user.is_authenticated %}

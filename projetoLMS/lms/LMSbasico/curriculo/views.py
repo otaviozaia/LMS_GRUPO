@@ -52,8 +52,8 @@ def NovoAluno(request):
             return render(request,"first_edit_senha.html")
 
 def NovoCoordenador(request):
-    User = request.user
-    if User.is_authenticated:
+    Usuario = request.user
+    if Usuario.is_authenticated:
         return render(request,"index.html")
     else:
         if request.method == "GET":
