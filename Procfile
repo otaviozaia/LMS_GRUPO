@@ -1,0 +1,1 @@
+web: gunicorn LMSbasico.wsgi --log-file -
