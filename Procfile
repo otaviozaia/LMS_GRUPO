@@ -1,1 +1,1 @@
-web: gunicorn LMSbasico.wsgi --log-file -
+web: gunicorn --pythonpath projetoLMS\lms\LMSbasico LMSbasico.wsgi --log-file-
