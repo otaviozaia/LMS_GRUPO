@@ -21,7 +21,7 @@
    */
   
   body {
-    background-image: url("../images/bgk.jpg");
+    background-color: antiquewhite;
     background-size:cover;
     margin: 0;   	   
   }
@@ -32,7 +32,9 @@
    */
   
   h1 {
-    font-size: 2em;
+    font-size: 5em;
+    font-family: 'arial';
+    color: #000080;
     margin: 0.67em 0;
   }
   
@@ -335,23 +337,24 @@
     display: none;
   }
   
-   .text_branco {
+   .text_blue {
        font-family: arial;
-       color: #ADD8E6;
+       color: rgb(55, 27, 214);
+       font-weight: bold;
    }
    
    a:link{
-       color:#1E90FF;
+       color:rgb(233, 232, 240);
        font-family: arial;
    }
    
    a:visited{
-       color:#87CEFA;
+       color:rgb(232, 238, 241);
        font-family: arial;
    }
    
    a:hover{
-       color:#6495ED;
+       color: #60baee;
        font-family: arial;
    }
    
@@ -388,7 +391,7 @@
    p {
      font-family: arial;
      font-size: initial;
-     color: honeydew;
+     color: #000080;
    }
   
    header{
@@ -396,6 +399,7 @@
     font-size: 20px;
     color: #000080;
     background: #B0C4DE;
+    box-shadow:4px 3px 43px rgb(28, 28, 29);
     text-align: center;
     height: 90px;
   }
@@ -405,8 +409,9 @@
     height: 40px;
     font-size: 20px;
     text-align: center;
-	display: flex;
-	justify-content: center;
+	  display: flex;
+    justify-content: center;
+    box-shadow:4px 3px 43px rgb(28, 28, 29);
   }
   
   nav{
@@ -432,8 +437,13 @@
     }
   
   .divNav{
-    box-shadow:4px 3px 43px #000;
-    width: 90%;
+    background-color: rgb(55, 27, 214);
+    box-shadow:4px 3px 43px rgb(28, 28, 29);
+    width: 60%;
+    margin-right:auto;
+    margin-left:400px;
+    margin-top:auto;
+    border-collapse: collapse;
   }
 
   .row:after {
@@ -465,7 +475,7 @@
 
   input[type=submit] {
     font-family: arial;
-    background-color: #B0C4DE;
+    background-color: #0d7bbb;
     color: #000080;
     padding: 12px 20px;
     border: none;
@@ -475,8 +485,8 @@
 }
 
 input[type=submit]:hover {
-    background-color: #3c6090;
-    color: honeydew;
+    background-color: #074468;
+    color: #e7ebf0;
 }
 
 #container{
@@ -512,9 +522,9 @@ input[type=submit]:hover {
 
 .div_login{
   width:400px;
-  height:430px;
-  background:rgba(0, 0, 0, 0.719);
-  box-shadow:4px 3px 43px rgb(88, 168, 192);
+  height:490px;
+  background:rgba(219, 154, 14, 0.719);
+  box-shadow:4px 3px 43px rgb(16, 12, 226);
   margin-right:auto;
   margin-left:auto;
   margin-top: 90px;
@@ -529,7 +539,7 @@ ul, li{
 
 .h1_branco{
   font-family: Arial, Helvetica, sans-serif;
-	 color: rgb(255, 255, 255);
+	 color: rgb(9, 14, 87);
 }
 
 .table_index{
@@ -575,4 +585,10 @@ ul, li{
 .div{
   background-color: #B0C4DE;
   height: 90px;
+}
+
+.jargao {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  color: #000080;
 }

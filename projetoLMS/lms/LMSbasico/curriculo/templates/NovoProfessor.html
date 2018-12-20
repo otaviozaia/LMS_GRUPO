@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
 {% block base %}
-    <div id="container">  
-        <form action = "{% url 'NovoProfessor' %}" method ="POST" id="registration">
+    <div class="div_login">  
+        <form action = "{% url 'NovoProfessor' %}" method ="POST">
             {% csrf_token %}
-            <h1><label for="buttom" align = "center" class="border">Novo Professor</label></h1><br/>                           
+            <br>
+            <h3 class="text_blue"><label for="buttom" align = "center"></label>Novo Professor</label></h3>                         
              <input type = "text" name = "nome"  id = "nome"value = "" placeholder = "Digite o seu nome" class="buttom"><br><br>              
              <input type = "email" name = "email" id = "email" value="" placeholder="Digite o seu email" class="buttom"><br><br>
              <input type = "celular" name = "celular" id = "celular" value="" placeholder="Digite o seu celular" class="buttom"><br><br>
